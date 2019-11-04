@@ -1,5 +1,10 @@
 spring:
   application:
+  rabbitmq:
+    host: 192.168.198.133
+    port: 5672
+    username: admin
+    password: admin       
     name: order-service
     
 # server:
@@ -21,6 +26,7 @@ management:
       exposure:
         include: hystrix.stream
         
+ 
 ---
 spring:
   profiles: order1
